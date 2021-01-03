@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Adam Auchie - Contact</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">;
+
+<style>
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background: url(/Users/aauch/Desktop/Portfolio\ site/images/webb.png) repeat 0 0;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 150px auto 50px 50px;
+        grid-template-areas:
+            ". navbar ."
+            ". main ."
+            ". . . "
+            ". footer .";
+    }
+    h1, h2 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        padding: 2px;
+    }
+    .navbar {
+        font-size: 20px;
+        height: 150px;
+        grid-area: navbar;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            ". name ."
+            ". buttons .";
+    }
+    .titlelogo {
+        grid-area: name;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .navbarbuttons {
+        grid-area: buttons;
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 100%;
+        justify-items: center;
+        grid-template-areas:
+            "home portfolio contact";
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .home {
+        width: 100px;
+        height: 35px;
+        grid-area: home;
+        background: #e27d60;
+        border-radius: 15px 15px 0px 0px;
+
+    }
+
+    .portfolio {
+        width: 115px;
+        height: 35px;
+        background:#e27d60;
+        grid-area: portfolio;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .contact {
+        width: 110px;
+        height: 35px;
+        background:#e27d60;
+        grid-area: contact;
+        border-radius: 15px 15px 0px 0px;
+        }
+
+    .home:hover, .portfolio:hover, .contact:hover {
+        animation-name: background-color;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+  }
+    @keyframes background-color {
+        100% {
+            background-color: #ebcebc;
+        }
+    }
+    .mainarea {
+        grid-area: main;
+        background-color: #e27d60;
+        border-style: groove;
+        border-color: #9b5120;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 420px auto;
+        grid-template-areas: 
+            "pics"
+            "writing";
+    }
+    .socials {
+        width: 35px;
+        margin-bottom: auto;
+        float: right;
+        padding: 10px;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: #e27d60;
+        height: 50px;
+        border-style: groove;
+        border-color:#9b5120;
+    }
+    .footertext {
+        margin-bottom: auto;
+    }
+    .contactform {
+        margin-top: 0px;
+        grid-area: pics;
+    }
+    .ctext{
+        grid-area: pics;
+    }
+    .messagefield{ 
+        margin-top: 0px;
+    }
+</style>
+<body>
+<div class="navbar">
+    <div class= "titlelogo"><h1>Adam Auchie - Development Portfolio</h1>
+    <div class="navbarbuttons">
+        <a href="C:\Users\aauch\Desktop\Portfolio site\Pages\home.html"><div class="home">Home</div></a>
+        <a href="C:\Users\aauch\Desktop\Portfolio site\Pages\portfolio.html"><div class="portfolio">Portfolio</div></a>
+        <a href="C:\Users\aauch\Desktop\Portfolio site\Pages\contact.html"><div class="contact">Contact</div></a>
+        </div>
+    </div>
+</div>
+<div class= "mainarea">
+    <div class="contactform">
+        <p>Please don't hesitate to get in touch if you have any questions about my portfolio! Either fill out the form below, or drop me a line via social media!</p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <p style="margin-top:0px">Message:</p>
+            <textarea id="message" cols="52" rows="6" id="message" type="text" name="submit" placeholder="Enter message here!" class="messagefield"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    Adam Auchie - Development &copy; 2020
+    <a href="https://www.facebook.com/"><img src="C:\Users\aauch\Desktop\Portfolio site\Images\facebook.png" alt="facebook icon" class="socials"></a>
+    <a href="https://uk.linkedin.com/in/adam-auchie-368b2a116"><img src="C:\Users\aauch\Desktop\Portfolio site\Images\linkedin.png" alt="linkedin icon" class="socials"></a>
+    <a href="https://github.com/calvi9"><img src="C:\Users\aauch\Desktop\Portfolio site\Images\github.png" alt="github icon" class="socials"></a>
+</div>
+</body>
+
+</html>        
+
+</div>
